@@ -2,13 +2,6 @@
 
 <img src="https://user-images.githubusercontent.com/74111185/165887205-ee82ee3c-00b0-40ae-9bd6-e4c84f8d3bae.png" min-width="100px" max-width="100px" width="100px" align="right">
 
-<img src="https://github.com/iuricode/iuricode/blob/main/ilus-code.svg" min-width="200px" max-width="200px" width="200px" align="right" alt="logo iuricode">
-
-
-<h2> 👨🏻•💻 Educación 👨🏻•💻 </h2>
-
-<p><a href="https://educamas.com.co/">Bootcamp full stack developer EducaMás-Prográmate</a>, Regional Bogotá cohorte IV. 💻 </br>
-</em></p>
 
 <h2> 👨🏻•💻 TEAM 👨🏻•💻 </h2>
 
@@ -17,7 +10,9 @@
 
 <h3>🛠 Tech Stack</h3>
 
-- 🌐 &nbsp; PYTHON | Django
+- 🌐 &nbsp; Html | Bootstrap  | Css
+
+- 🌐 &nbsp; PYTHON | Django  | SQLITE3
 
 
 ## Instrucciones:
