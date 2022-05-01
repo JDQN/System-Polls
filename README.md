@@ -23,7 +23,7 @@
 - Correr el comando python3 manage.py runserver para ejecutar el proeycto        
 
 
-<h2>💻 IMG 💻</h2>
+<h2>💻 Img💻</h2>
 
 <img  src="https://github.com/JDQN/System-Polls/blob/main/img1.png" width="500" />
 
