@@ -10,7 +10,7 @@
 
 <h3>🛠 Tech Stack</h3>
 
-- 🌐 &nbsp; Html | Bootstrap  | Css
+- 🌐 &nbsp; Html5 | Css3 | Bootstrap
 
 - 🌐 &nbsp; PYTHON | Django  | SQLITE3
 
