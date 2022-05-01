@@ -25,8 +25,8 @@
 
 <h2>💻 IMG 💻</h2>
 
-<img  src="https://user-images.githubusercontent.com/74111185/165887022-9791e6c5-1fb1-4127-8967-3c89ed5b9411.png" width="500" />
+<img  src="https://github.com/JDQN/System-Polls/blob/main/img1.png" width="500" />
 
-<img align='right' src="https://github.com/JDQN/Juego-Snake-Python/blob/main/img1.png" width="500" />
+<img align='right' src="https://github.com/JDQN/System-Polls/blob/main/img2.png" width="500" />
 
-<img  src="https://github.com/JDQN/Juego-Snake-Python/blob/main/img2.png" width="500" />
+<img  src="https://github.com/JDQN/System-Polls/blob/main/img3.png" width="500" />
