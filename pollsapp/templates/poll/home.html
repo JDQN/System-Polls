@@ -3,26 +3,22 @@
 {% block title %}System Polls{% endblock %}
 
 {% block main %}
-<div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Available Polls</h3>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+        {% for poll in polls %}
+            {#  Single Card Template:#}
+            <div class="card" style="width: 18rem; margin: 10px">
+                <img src="https://i.auto-bild.de/mdb/extra_large/62/aklasse-bb5.png" class="card-img-top" >
+                <div class="card-body">
+                    <div style="display: flex; flex-direction: row">
+                    <h5 class="card-title">{{ poll.question }}</h5>
+                    </div>
+                    <div class="panel-footer">
+                        Total &mdash; <strong>{{ poll.total }}</strong>
+                    </div>
+                    <a href="{% url 'vote' poll.id %}" class="btn btn-primary">Answer</a>
+                    <a href="{% url 'results' poll.id %}" class="btn btn-info">View Results</a>
+                </div>
             </div>
-                
-            <ul class="list-group">
-                {% for poll in polls %}
-                <li class="list-group-item">
-                    <strong>{{ poll.question }}</strong>
-                    <span class="pull-right">
-                        <a href="{% url 'vote' poll.id %}" class="btn btn-info btn-xs">Answer</a> &nbsp;
-                        <a href="{% url 'results' poll.id %}" class="btn btn-default btn-xs">View Results</a> &nbsp;
-                    </span>
-                </li>
-                {% endfor %}
-            </ul>
-
-        </div>
+        {% endfor %}
     </div>
-</div>
 {% endblock %}

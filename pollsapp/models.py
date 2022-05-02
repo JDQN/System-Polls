@@ -14,5 +14,22 @@ class Poll(models.Model):
     option_three_count = models.IntegerField(default=0)
     option_four_count = models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.question
+
+
+
+class Choice(models.Model):
+    poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
+    option_one_count = models.CharField(max_length=30)
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+
+
+
+
     def total(self):
-        return self.option_one_count + self.option_two_count + self.option_three_count + self.option_four_count
+            return self.option_one_count + self.option_two_count + self.option_three_count + self.option_four_count
+        
+
+    

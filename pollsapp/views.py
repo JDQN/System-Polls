@@ -1,14 +1,16 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import CreatePollForm
-from .models import Poll
+from .models import Poll, Choice
 
 
 # Create your views here.
 def home(request):
     polls = Poll.objects.all()
+    choices = Choice.objects.all()
     context = {
         'polls': polls,
+        'choices': choices
     }
     return render(request,'poll/home.html', context)
 
@@ -63,7 +65,6 @@ def vote(request, poll_id):
 
 def results(request, poll_id):
     poll = Poll.objects.get(pk=poll_id)
-
     context = {
         'poll' : poll
     }
