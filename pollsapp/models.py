@@ -17,6 +17,9 @@ class Poll(models.Model):
     def __str__(self):
         return self.question
 
+    def total(self):
+            return self.option_one_count + self.option_two_count + self.option_three_count + self.option_four_count
+        
 
 
 class Choice(models.Model):
@@ -26,10 +29,5 @@ class Choice(models.Model):
     update_at = models.DateTimeField(auto_now=True)
 
 
-
-
-    def total(self):
-            return self.option_one_count + self.option_two_count + self.option_three_count + self.option_four_count
-        
 
     
