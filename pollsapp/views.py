@@ -35,12 +35,16 @@ def vote(request, poll_id):
 
         selected_option = request.POST['poll']
         if selected_option == 'option1':
+            print(request.POST)
             poll.option_one_count += 1
         elif selected_option == 'option2':
-            poll.option_two_count += 1
+            print(request.POST)
+            poll.option_two_count  += 1
         elif selected_option == 'option3':
+            print(request.POST)
             poll.option_three_count += 1
         elif selected_option == 'option4':
+            print(request.POST)
             poll.option_four_count += 1
 
         else:
