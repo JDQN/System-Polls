@@ -13,8 +13,10 @@
                     <div style="display: flex; flex-direction: row">
                     <h5 class="card-title">{{ poll.question }}</h5>
                     </div>
-                    <div class="panel-footer">
-                        Total answers &mdash; <strong> {{ poll.total }} </strong>
+                    <div class="panel-footer mb-3">
+                        <button  class="btn btn-outline-warning">
+                            Answer Total &nbsp;<span class="badge bg-secondary">4</span>
+                        </button>
                     </div>
                     <a href="{% url 'vote' poll.id %}" class="btn btn-primary">Answer</a>
                     <a href="{% url 'results' poll.id %}" class="btn btn-info" data-bs-dismiss="modal" data-bs-target="#my-modal">View Results</a>
@@ -45,7 +47,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary btn-sm">Save changes</button>
             </div>
         </div>
     </div>
