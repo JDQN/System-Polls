@@ -14,9 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-
 from pollsapp import views as poll_views
 
 
@@ -26,4 +27,4 @@ urlpatterns = [
     path('create/', poll_views.create, name='create'),
     path('results/<poll_id>/', poll_views.results, name='results'),
     path('vote/<poll_id>/', poll_views.vote, name='vote'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
