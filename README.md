@@ -3,6 +3,11 @@
 <img src="https://user-images.githubusercontent.com/74111185/165887205-ee82ee3c-00b0-40ae-9bd6-e4c84f8d3bae.png" min-width="100px" max-width="100px" width="100px" align="right">
 
 <p>💻 Link del -> <a href="https://sistemapolls.herokuapp.com/">Deploying System Polls</a>💻 </p>
+<p>💻 Link del de la vista admin -> <a href="https://sistemapolls.herokuapp.com/admin/login/?next=/admin/">Admin</a>💻 </p>
+
+<p>Username: admin</p>
+<p>Password:: admin123</p>
+
 
 
 <h2> 👨🏻•💻 TEAM 👨🏻•💻 </h2>
@@ -26,6 +31,9 @@
 
 
 <h2>💻 Img💻</h2>
+
+<img  align='right' src="https://github.com/JDQN/System-Polls/blob/main/img1.png" />
+
 
 <img  src="https://github.com/JDQN/System-Polls/blob/main/img1.png" width="500" />
 
