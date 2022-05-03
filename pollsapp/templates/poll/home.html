@@ -13,42 +13,16 @@
                     <div style="display: flex; flex-direction: row">
                     <h5 class="card-title">{{ poll.question }}</h5>
                     </div>
-                    <div class="panel-footer mb-3">
-                        <button  class="btn btn-outline-warning">
-                            Answer Total &nbsp;<span class="badge bg-secondary">4</span>
+                    <div class="panel-footer mb-2 center">
+                        <button type="button" class="btn btn-outline-warning btn-sm">
+                            Result &mdash; <span class="badge bg-secondary">{{poll.total}}</span>
                         </button>
                     </div>
-                    <a href="{% url 'vote' poll.id %}" class="btn btn-primary">Answer</a>
-                    <a href="{% url 'results' poll.id %}" class="btn btn-info" data-bs-dismiss="modal" data-bs-target="#my-modal">View Results</a>
+                    <a href="{% url 'vote' poll.id %}" class="btn btn-primary btn-sm">Answer</a>
+                    <a href="{% url 'results' poll.id %}" class="btn btn-info btn-sm" >View Results</a>
                 </div>
             </div>
         {% endfor %}
     </div>
 {% endblock %}
 
-
-<div class="modal" tabindex="-1" id='modal' >
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">{{ poll.question }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <ul class="list-group">
-                    <li class="list-group-item">{{ poll.option_one }} &mdash; <strong>{{ poll.option_one_count }}</strong></li>
-                    <li class="list-group-item">{{ poll.option_two }} &mdash; <strong>{{ poll.option_two_count }}</strong></li>
-                    <li class="list-group-item">{{ poll.option_three }} &mdash; <strong>{{ poll.option_three_count }}</strong></li>
-                    <li class="list-group-item">{{ poll.option_four }} &mdash; <strong>{{ poll.option_four_count }}</strong></li>
-                </ul>
-            </div>
-            <div class="panel-footer">
-                Total &mdash; <strong>{{ poll.total }}</strong>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary btn-sm">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>

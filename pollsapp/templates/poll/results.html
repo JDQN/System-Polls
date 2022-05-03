@@ -3,28 +3,28 @@
 {% block title %}Results{% endblock %}
 
 {% block main %}
-<div class="modal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">{{ poll.question }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Poll Result</h3>
             </div>
-            <div class="modal-body">
-                <ul class="list-group">
-                    <li class="list-group-item">{{ poll.option_one }} &mdash; <strong>{{ poll.option_one_count }}</strong></li>
-                    <li class="list-group-item">{{ poll.option_two }} &mdash; <strong>{{ poll.option_two_count }}</strong></li>
-                    <li class="list-group-item">{{ poll.option_three }} &mdash; <strong>{{ poll.option_three_count }}</strong></li>
-                    <li class="list-group-item">{{ poll.option_four }} &mdash; <strong>{{ poll.option_four_count }}</strong></li>
-                </ul>
+
+            <div class="panel-body">
+                <h3>{{ poll.question }}</h3>
             </div>
+
+            <ul class="list-group">
+                <li class="list-group-item">{{ poll.option_one }} &mdash; <strong>{{ poll.option_one_count }}</strong></li>
+                <li class="list-group-item">{{ poll.option_two }} &mdash; <strong>{{ poll.option_two_count }}</strong></li>
+                <li class="list-group-item">{{ poll.option_three }} &mdash; <strong>{{ poll.option_three_count }}</strong></li>
+                <li class="list-group-item">{{ poll.option_four }} &mdash; <strong>{{ poll.option_four_count }}</strong></li>
+            </ul>
+
             <div class="panel-footer">
                 Total &mdash; <strong>{{ poll.total }}</strong>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+
         </div>
     </div>
 </div>
