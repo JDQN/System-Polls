@@ -35,7 +35,8 @@
 <img  align='right' src="https://github.com/JDQN/System-Polls/blob/main/login.png" width="500" />
 
 
-<img  align='right' src="https://github.com/JDQN/System-Polls/blob/main/userAdmin.png" width="400" />
+
+<img   src="https://github.com/JDQN/System-Polls/blob/main/userAdmin.png" width="500" />
 
 
 
